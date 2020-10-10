@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/purchase.css" type="text/css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="navbar">
+            
+            <a href="#" class="logo">BOOKSTORE</a>
+            <div class="header-right">
+
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart</a>
+            </div>
+                
+            
+        </div>
+        <div class="navbar-s">
+            
+            <a href="#" class="logo">BOOKSTORE</a>
+            <div class="header-right">
+                <img src="images/menu-s.png" onclick="showModal()" height="40px" width="40px"/>
+
+            </div>
+                
+            
+        </div>
+        <div class="modal-container-s">
+            <div class="modal-content-s">
+                <div class="close">x</div>
+                <a href="index.html"><button class="close-modal">Home</button></a><br>
+                <a href="Cart.html"><button class="close-modal">Cart</button></a>
+            </div>
+        </div>
+    </header>
+    <section id="main-container">
+        <div class="purchase-section" id="purchase">
+            <h1 class="purchase-title">Please provide more Information!</h1>
+            <p></p>
+
+            <div class="purchase-content">
+                <div class="table">
+                    
+
+                    
+                     
+                    <div><h4>Your Name</h4></div>
+                    <div><input type="text" placeholder="Firstname Middlename Lastname" required="required" id="name" name="name" /></div>
+                    <div><h4>Your Contact No.</h4></div>
+                    <div><input type="text" pattern="[987][0-9]{9}" maxlength="10" minlength="10" placeholder="9876543210" required="required" id="mobile" name="mobile" /></div>  
+                    <div><h4>Delivery Address</h4></div>
+                    <div>
+                        <input type="text" placeholder="House No./Name" required="required" id="addressLine1" name="addressLine1" />
+                        <input type="text" placeholder="Locality" required="required" id="addressLine2" name="addressLine2" />
+                        <input type="text" placeholder="City" required="required" id="addressLine3" name="addressLine3" />
+                        <input type="text" placeholder="State" required="required" id="addressLine4" name="addressLine4" />
+                        
+                        <input type="text" placeholder="Country" required="required" id="addressLine5" name="addressLine5" />
+                        <input type="text" pattern="[0-9]{6}" placeholder="PIN code" required="required" id="pin" name="pin" maxlength="6" minlength="6"/>
+                    
+                    </div>
+                    <div><h4>Payment Information</h4></div>
+                    <div></div>
+                    <div><h5>Enter Credit Card Details</h5></div>
+                    <div><input type="text" placeholder="xxxx xxxx xxxx xxxx"  required="required" id="creditno" class="creditno"  />
+                    <span id="msg"></span></div>
+                    <div></div>
+                    <div><h4>Total Amount</h4></div>
+                    <div></div>
+                    <div id="total"></div>
+                     
+                        
+                   <div><a href="cart.html"><< Go to Cart Page</a></div>
+                   <div><input type="submit" id="purchasebtn" value="Confirm" onclick="validate()"></div>
+                
+                
+                    
+                </div>
+                <br>
+                <br>
+                
+            
+                
+
+            </div>
+            
+
+            
+        </div>
+
+        
+
+    </section>
+    
+    
+
+    <script src="js/modal.js"></script>
+    <script src="js/purchase.js"></script>
+
+    <footer>
+        <h1>Copyright &copy 2020 Online Bookstore</h1>
+        <div class="footer-social-media">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script src="js/modal.js"></script>
+</body>
+</html>

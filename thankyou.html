@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/thankyou.css" type="text/css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="navbar">
+            
+            <a href="#" class="logo">BOOKSTORE</a>
+            <div class="header-right">
+
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart</a>
+            </div>
+                
+            
+        </div>
+        <div class="navbar-s">
+            
+            <a href="#" class="logo">BOOKSTORE</a>
+            <div class="header-right">
+                <img src="images/menu-s.png" onclick="showModal()" height="40px" width="40px"/>
+
+            </div>
+                
+            
+        </div>
+        <div class="modal-container-s">
+            <div class="modal-content-s">
+                <div class="close">x</div>
+                <a href="index.html"><button class="close-modal">Home</button></a><br>
+                <a href="Cart.html"><button class="close-modal">Cart</button></a>
+            </div>
+        </div>
+    </header>
+    <section id="main-container">
+        <div class="thankyou-section" id="cart">
+            <h1 class="thankyou-title">Thanks for your order</h1>
+            <p>We are processing your order, here are the details</p>
+
+            <div class="order-content">
+                <div class="table">
+                     
+                    <div><h4>Order No.</h4></div> 
+                    <div id="orderID"></div>
+                    <div><h4>Delivery for</h4></div>
+                    <div id="name"></div>
+                    <div><h4>Delivery Address</h4></div>
+                    <div id="address"></div>
+                    <div><h4>Payment Information</h4></div>
+        
+                    <div><h5>Credit Card</h5>
+                    <span id="creditno"></span></div>
+                    <div><h4>Total Amount</h4>
+                    <span id="totalprice"></span></div>
+                    
+                    
+                       
+                </div>
+                <br>
+                <a href="index.html"><< Go to Home Page</a>
+                
+                
+
+            </div>
+            
+
+            
+        </div>
+
+        
+
+    </section>
+    
+    
+
+    
+
+    <footer>
+        <h1>Copyright &copy 2020 Online Bookstore</h1>
+        <div class="footer-social-media">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script src="js/modal.js"></script>
+    <script src="js/thankyou.js"></script>
+</body>
+</html>

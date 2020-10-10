@@ -1,0 +1,251 @@
+
+/* ----------------css for body----------------- */
+body{
+    background-color: #F5F5F5;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+/* ---------everything below header tag-----*/
+.main-container{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+/*-------------------for desktops------------------- */
+@media only screen and (min-width: 768px) {
+    header{
+    
+        /*background-color: black;*/
+        color: #f5f5f5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        
+    }
+    .navbar-s {
+     display: none;
+      
+    }
+
+    .navbar-s ul li a{
+      display: none;
+  
+    }
+
+    .navbar {
+        background-color: #000000;
+        overflow: hidden;
+        
+    }
+    
+    .navbar a {
+        
+        color: #f5f5f5;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        float: left;
+
+    }
+        
+     .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+        
+    .navbar a.active {
+        background-color: #111111;
+        color: #f5f5f5;
+    }
+
+    .logo{
+        font-weight: bolder;
+    }
+
+    .header-right{
+        right: 0;
+        position: fixed;
+        float: right;
+        /*display: inline-block;*/
+    }
+}
+
+/*-------------for mobile phones------*/
+
+
+@media only screen and (max-width: 768px) {
+    header{
+    
+        /*background-color: black;*/
+        color: #f5f5f5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        
+    }
+  
+    .navbar{
+        display: none;
+      }
+    .navbar-s {
+        background-color: #000000;
+        overflow: hidden;
+  
+        
+      }
+      
+      
+      .navbar-s a {
+        
+        color: #f5f5f5;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        float: left;
+    
+      }
+        
+      .navbar-s a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .navbar-s a.active {
+        background-color: #111111;
+        color: #f5f5f5;
+      }
+    
+      .logo{
+        font-weight: bolder;
+      }
+    
+      .header-right{
+         
+        
+        right: 0;
+        position: fixed;
+        float: right;
+        /*display: inline-block;*/
+      }
+  
+      .header-right img{
+         padding-right: 10px;
+         padding-top: 10px;
+         cursor: pointer;
+      }
+      .modal-container-s{
+        width: 100%;
+        height: 100%;
+        background-color: #111111;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .modal-content-s{
+        width: 80%;
+      }
+      .modal-container-s button{
+        width: 100%;
+        padding: 20px 20px;
+            
+        color: orangered;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 20px;
+        
+       
+      }
+      .modal-container-s button:hover{
+        box-shadow: 0px 0px 16px #f5f5f5;       
+      }
+    }  
+    
+    .close{
+        text-align: left;
+        background-color: orangered;
+        color: white;
+        padding: 10px 15px 10px 15px;
+        width: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+    .close:hover{
+        background-color: white;
+        color: orangered;
+        border: 2px  rgb(51, 47, 45) solid;
+        cursor: pointer;
+        box-shadow: 0px 0px 16px #808080;
+        
+    }
+
+    /*-----footer----------*/
+    footer{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border: 1px #808080;
+        background-color: black;
+        color: #f5f5f5;
+        text-align: center;
+        font-size: 10px;
+        clear: both;
+      }
+    
+      footer ul{
+        list-style-type: none;
+        display: flex;
+      }
+      .footer-social-media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 100%;
+    
+      }
+      footer ul li{
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px 10px;
+        width: 30px;
+      }
+    
+    
+      footer ul li:hover{
+        
+        cursor: pointer;
+        border: 3px orangered solid;
+        border-radius: 50%;
+        box-shadow: 0 0 2px rgba(255, 255, 0, 0.75);
+      }
+    
+      @media only screen and (max-width: 768px) {
+          footer{
+              font-size: 8px;
+          }
+
+      }

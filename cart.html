@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/cart.css" type="text/css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navbar">
+
+            <a href="#" class="logo">BOOKSTORE</a>
+            <div class="header-right">
+
+                <a href="index.html">Home</a>
+                <a href="#">Cart</a>
+            </div>
+
+
+        </div>
+        <div class="navbar-s">
+            
+            <a href="#" class="logo">BOOKSTORE</a>
+            <div class="header-right">
+                <img src="images/menu-s.png" onclick="showModalCart()" height="40px" width="40px"/>
+
+            </div>
+                
+            
+        </div>
+        <div class="modal-container-s">
+            <div class="modal-content-s">
+                <div class="close">x</div>
+                <a href="index.html"><button>Home</button></a><br>
+                <a href="Cart.html"><button>Cart</button></a>
+            </div>
+        </div>
+    </header>
+    <section id="main-container">
+        <div class="cart-section" id="cart">
+            <h1 class="cart-title">My Cart</h1>
+
+            <div class="cart-content" id="cartContent">
+
+                <!--
+                <div class="cart-item">
+                    <div>1</div>
+                    <div>1</div>
+                    
+                </div>
+
+                <div class="cart-item">
+                    <div>1</div>
+                    <div>1</div>
+                    
+                </div>
+
+                -->
+
+                
+
+                <!--
+
+                
+                <div class="cart-item">
+                    <div class="close" title="Remove from Cart">x</div>
+                    <div class="cart-left">
+                        
+                        
+                        <img src="images/1984.jpg" height="238px" width="148px" title="Click to View more" />
+
+
+                    </div>
+                    <div class="cart-right">
+                        <h4>Title</h4>
+                        <P>Price</P>
+                        <div id="qty-section">
+                            <p>Quantity :
+                                <span id="output"><input type="number" id="qty" required="required" value="1" min="1"></span>
+                                
+                            </p>
+                        </div>
+                        <div class="total-item">Rs. 180</div>
+
+
+                    </div>
+
+                </div>
+
+                -->
+
+            </div>
+            <div class="purchase-section">
+                <table border="0" width="100%">
+                    <tr>
+                        <td>
+                            <div id="total">Total price here</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="purchase.html"><button id="purchasebtn">Purchase</button></a>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <footer>
+        <h1>Copyright &copy 2020 Online Bookstore</h1>
+        <div class="footer-social-media">
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+
+            </ul>
+        </div>
+
+    </footer>
+    <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+
+  .cart-section{
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .cart-content{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  .cart-title{
+    font-size: 30px;
+
+  }
+
+  #cartContent{
+      margin: auto;
+      justify-content: center;
+  }
+
+  .cart-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    width: 80%;
+    border: 1px #808080 solid;
+    margin: 10px;
+
+  }
+
+  
+@media screen and (min-width: 600px){
+    .cart-item{
+      grid-template-columns: repeat(1, 1fr);
+  
+    }
+  }
+  
+  @media screen and (min-width: 768px){
+    .cart-item{
+      grid-template-columns: repeat(2, 1fr);
+  
+    }
+  }
+  
+  
+.col{
+    width: 90%;
+    border: 1px #111111 solid;
+    justify-content: center;
+    padding: 10px 10px;
+    
+  }
+  .col:hover{
+    box-shadow: 0px 0px 16px #111111;
+  }
+  
+  
+  .col img{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+  
+  .col img:hover{
+    box-shadow: 0px 0px 16px white;
+  }
+  
+ 
+
+  .cart-item:hover{
+
+    border: 1px #808080 solid;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    background-color: rosybrown;
+  }
+  
+  .cart-content img:hover{
+    box-shadow: 0px 0px 10px rgba(1,1,1,0.7);
+  }
+  
+  .qty{
+    width: 45px;
+    padding: 10px 10px 10px 10px;
+    outline: none;
+
+  }
+  #closebtn{
+    text-align: left;
+    width: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+  #closebtn:hover{
+    background-color: white;
+    color: orangered;
+    border: 2px  orangered solid;
+    cursor: pointer;
+    box-shadow: 0px 0px 16px #808080;
+    
+  }
+  .total-item{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
+
+  }
+  .purchase-section{
+    margin-top: 50px;
+    border: 2px  #111111 solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px #808080;
+    padding: 50px 50px 50px 50px;
+
+
+  }
+  .purchase-section button{
+    text-align: left;
+    background-color: orangered;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+  .purchase-section button:hover{
+    background-color: white;
+    color: orangered;
+    border: 2px  orangered solid;
+    cursor: pointer;
+    box-shadow: 0px 0px 16px #808080;
+    
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .close{
+      float: right;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+
+    .close{
+      float: left;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    .cart-right{
+      margin-left: 10px;
+      display: block;
+      width: 90%;
+      
+    }
+  }
+
+  footer{
+      bottom: 0;
+      position: fixed;
+  }

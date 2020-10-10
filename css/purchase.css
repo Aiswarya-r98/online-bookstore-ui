@@ -1,0 +1,97 @@
+
+  
+  .purchase-section{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 50px;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+  }
+
+  #purchasebtn{
+    width: 40%;
+    color: #f5f5f5;
+    background-color: orangered;
+    border: 1px orangered solid;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 5px;
+    cursor: pointer;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #purchasebtn:hover{
+    
+    color: black;
+    background-color:#f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  .purchase-section p{
+    margin-bottom: 0px;
+}
+
+  .purchase-section input{
+      width: 80%;
+      height: 30px;
+      padding-left: 10px;
+      outline: none;
+      margin: 5px;
+  }
+  .purchase-section input:hover{
+    box-shadow: 0px 0px 16px rgba(255,69,0,0.5);
+}
+
+ .table{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     width: 100%;
+ }
+
+ @media screen and (min-width: 500px){
+    .table{
+      grid-template-columns: repeat(1, 1fr);
+  
+    }
+  }
+  
+  @media screen and (min-width: 768px){
+    .table{
+      grid-template-columns: repeat(2, 1fr);
+  
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+
+    .close{
+      float: right;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+  .close{
+    text-align: left;
+    float: left;
+    background-color: orangered;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+  .close:hover{
+    background-color: white;
+    color: orangered;
+    border: 2px  orangered solid;
+    cursor: pointer;
+    box-shadow: 0px 0px 16px #808080;
+    
+  }
